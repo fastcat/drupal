@@ -217,6 +217,9 @@ define('LANGUAGE_RTL', 1);
 if (defined('E_DEPRECATED')) {
   error_reporting(error_reporting() & ~E_DEPRECATED);
 }
+if (defined('E_STRICT')) {
+  error_reporting(error_reporting() & ~E_STRICT);
+}
 
 /**
  * Start the timer with the specified name. If you start and stop
